@@ -12,8 +12,11 @@ import {
 const routes: Routes = [
   {
     path: 'pages',
-    loadChildren: () => import('app/pages/pages.module')
-      .then(m => m.PagesModule),
+    loadChildren: () => import('app/pages/pages.module').then(m => m.PagesModule),
+  },
+  {
+    path: 'rrcp',
+    loadChildren: () => import('app/rrcp/rrcp.module').then(m => m.RRCpModule),
   },
   {
     path: 'auth',
@@ -57,5 +60,4 @@ const config: ExtraOptions = {
   imports: [RouterModule.forRoot(routes, config)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule {}
