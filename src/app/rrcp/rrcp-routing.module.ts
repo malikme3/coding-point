@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { RRCpComponent } from './rrcp.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
+import { CareerSuccessComponent } from './home-page copy/career-success.component';
 
 const routes: Routes = [
   {
@@ -11,8 +12,12 @@ const routes: Routes = [
     component: RRCpComponent,
     children: [
       {
-        path: 'dashboard',
+        path: 'home-page',
         component: HomePageComponent,
+      },
+      {
+        path: 'career-success',
+        component: CareerSuccessComponent,
       },
       {
         path: '**',

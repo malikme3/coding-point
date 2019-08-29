@@ -12,5 +12,22 @@
     ngx-traffic {
       display: none;
     }
+    ::ng-deep nb-layout-column {
+      justify-content: center;
+      display: flex;
+    }
   }
+}
+
+.home-page {
+  background: url('pic/19366.jpg');
+
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
